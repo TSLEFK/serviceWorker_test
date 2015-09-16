@@ -52,8 +52,7 @@ debugger;
  * 3. リクエストしたURLに対応するファイルがキャッシュにない場合は、インストール時に登録したnodata.htmlを返す。
  */
 
-addEventListener("fetch", function(event)
-{
+addEventListener("fetch", function(event){
   var online = navigator.onLine;
   
   if(online){
@@ -63,7 +62,7 @@ addEventListener("fetch", function(event)
       fetch(event.request)
         .then(function(response)
         {
-          if(!response || response.status != 200) return;
+          if(!response || response.status != 200) console.log("in if not 200"); return;
 
           caches.open("myCache")
             .then(function(cache)
@@ -73,9 +72,7 @@ addEventListener("fetch", function(event)
             });
         })
     );
-  }
-  else
-  {
+  }else{
     event.respondWith(
       caches.match(event.request)
         .then(function(response)
