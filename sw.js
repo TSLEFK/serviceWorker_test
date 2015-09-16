@@ -24,7 +24,9 @@ addEventListener("install", function(event)
 //公式からのソース
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  './'
+  'index.html',
+  'back.jpg',
+  'image_src.png'
 ];
 
 self.addEventListener('install', function(event) {
@@ -38,6 +40,40 @@ self.addEventListener('install', function(event) {
   );
 });
 
+self.addEventListener('fetch', function (e) {
+
+  console.log('ServiceWorker.onfetch: ', e);
+
+  e.respondWith(
+    caches.open(CACHE_NAME)
+      .then(function (cache) {
+        
+      return cache.match(e.request)
+        .then(function (response) {
+        if (response) {
+
+          // e.requestに対するキャッシュが見つかったのでそれを返却
+          return response;
+        } else {
+
+          // キャッシュが見つからなかったので取得
+          fetch(e.request.clone()).then(function (response) {
+
+            // 取得したリソースをキャッシュに登録
+            cache.put(e.request, response.clone());
+
+            // 取得したリソースを返却
+            return response;
+          });
+        }
+      });
+    })
+  );
+});
+
+self.addEventListener('activate', function (e) {
+  console.log('ServiceWorker.onactivate: ', e);
+});
 
 /**
  * スコープ内でファイル取得のリクエストが飛んだ時の関数
@@ -47,14 +83,14 @@ self.addEventListener('install', function(event) {
  * 1. オンライン時は普通にファイルを取得させ、キャッシュにも保存させる。
  * 2. オフライン時はキャッシュされているファイルを返すようにする。
  * 3. リクエストしたURLに対応するファイルがキャッシュにない場合は、インストール時に登録したnodata.htmlを返す。
- */
+ 
 
 addEventListener("fetch", function(event){
   var online = navigator.onLine;
   
   if(online){
     console.log("online get files and save cache");
-    /* 1 */
+    // 1 
     event.respondWith(
       fetch(event.request)
         .then(function(response)
@@ -77,13 +113,13 @@ addEventListener("fetch", function(event){
       caches.match(event.request)
         .then(function(response)
         {
-          /* 2 */
+          // 2
           if(response)
           {
             console.log("Now offline. return cache");
             return response;
           }
-          /* 3 */
+          // 3
           else if(event.request.context == "internal")
           {
             console.log("Now offline. return nodata");
@@ -97,3 +133,4 @@ addEventListener("fetch", function(event){
     );
   }
 });
+*/
