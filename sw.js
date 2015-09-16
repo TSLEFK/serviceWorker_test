@@ -8,6 +8,7 @@ importScripts('serviceworker-cache-polyfill.js');
  * オフライン時、キャッシュに登録されていないURLにアクセスした場合に表示するHTMLを取得する。
  * オンライン時にこのファイルにアクセスすることがないため。
 */
+ /*
 addEventListener("install", function(event)
 {
   event.waitUntil(
@@ -19,12 +20,13 @@ addEventListener("install", function(event)
       })
   );
 });
- /*
+*/
 //公式からのソース
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   './',
   './index.html',
+  'image_src.png',
   'style.css'
 ];
 
@@ -40,7 +42,7 @@ debugger;
      })
  );
 });
-*/
+
 
 /**
  * スコープ内でファイル取得のリクエストが飛んだ時の関数
@@ -62,7 +64,10 @@ addEventListener("fetch", function(event){
       fetch(event.request)
         .then(function(response)
         {
-          if(!response || response.status != 200) console.log("in if not 200"); return;
+          if(!response || response.status != 200){
+            console.log("in if not 200");
+            return;
+          }
 
           caches.open("myCache")
             .then(function(cache)
