@@ -32,7 +32,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
+        console.log('cache add All');
         return cache.addAll(urlsToCache);
       })
   );
@@ -53,7 +53,7 @@ addEventListener("fetch", function(event){
   var online = navigator.onLine;
   
   if(online){
-    console.log("in 1");
+    console.log("online get files and save cache");
     /* 1 */
     event.respondWith(
       fetch(event.request)
@@ -80,13 +80,13 @@ addEventListener("fetch", function(event){
           /* 2 */
           if(response)
           {
-            console.log("in 2");
+            console.log("Now offline. return cache");
             return response;
           }
           /* 3 */
           else if(event.request.context == "internal")
           {
-            console.log("in 3");
+            console.log("Now offline. return nodata");
             return caches.match("index.html")
               .then(function(responseNodata)
               {
