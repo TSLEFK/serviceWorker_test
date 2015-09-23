@@ -1,0 +1,16 @@
+body {
+	background-color:#FFFFFF;
+	font-family: "ＭＳ ゴシック","ＭＳ Ｐゴシック", Osaka !important;
+}
+
+#sidemenu{display:none;}
+
+.top{display:none;}
+
+#footer{display:none;}
+
+.noprint,.side{display:none;}
+
+#author_profile,.side{page-break-before: always; }
+
+fieldset{ border-width:0;}

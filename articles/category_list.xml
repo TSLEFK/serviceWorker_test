@@ -1,0 +1,250 @@
+<hash>
+    <status>OK</status>
+    <categories type="array">
+        <category>
+            <created-at type="datetime">2008-10-09 16:03:25</created-at>
+            <id type="integer">8</id>
+            <name>環境研究会</name>
+            <parent-id type="integer"></parent-id>
+            <updated-at type="datetime">2008-10-09 16:03:25</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2008-10-09 16:05:11</created-at>
+            <id type="integer">14</id>
+            <name>技術報告</name>
+            <parent-id type="integer"></parent-id>
+            <updated-at type="datetime">2008-10-09 16:05:11</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2008-10-09 16:05:38</created-at>
+            <id type="integer">15</id>
+            <name>省エネ技術</name>
+            <parent-id type="integer">14</parent-id>
+            <updated-at type="datetime">2008-10-09 16:05:38</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2008-10-09 16:06:15</created-at>
+            <id type="integer">17</id>
+            <name>提言：関西を元気に！</name>
+            <parent-id type="integer"></parent-id>
+            <updated-at type="datetime">2008-10-09 16:06:15</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2008-10-09 16:06:33</created-at>
+            <id type="integer">18</id>
+            <name>連載記事（ﾌｼﾞｻﾝｹｲﾋﾞｼﾞﾈｽｱｲ）</name>
+            <parent-id type="integer">17</parent-id>
+            <updated-at type="datetime">2008-10-09 16:06:33</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2008-10-09 16:07:09</created-at>
+            <id type="integer">20</id>
+            <name>社会・経営・産学官民</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime">2008-10-09 16:07:09</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2007-12-10 18:04:27</created-at>
+            <id type="integer">21</id>
+            <name>その他</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime">2007-12-10 18:04:27</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:25:40</created-at>
+            <id type="integer">24</id>
+            <name>環境技術</name>
+            <parent-id type="integer">14</parent-id>
+            <updated-at type="datetime">2009-01-05 23:25:40</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:26:00</created-at>
+            <id type="integer">25</id>
+            <name>一般技術</name>
+            <parent-id type="integer">14</parent-id>
+            <updated-at type="datetime">2009-01-05 23:26:00</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:26:30</created-at>
+            <id type="integer">26</id>
+            <name>講演会</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2009-01-05 23:26:30</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:26:58</created-at>
+            <id type="integer">27</id>
+            <name>北九州エコタウン・山口</name>
+            <parent-id type="integer">37</parent-id>
+            <updated-at type="datetime">2010-09-08 00:40:53</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:27:20</created-at>
+            <id type="integer">28</id>
+            <name>社会・経営一般</name>
+            <parent-id type="integer">20</parent-id>
+            <updated-at type="datetime">2009-01-05 23:27:20</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:27:35</created-at>
+            <id type="integer">29</id>
+            <name>産学官民</name>
+            <parent-id type="integer">20</parent-id>
+            <updated-at type="datetime">2009-01-05 23:27:35</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2009-01-05 23:28:25</created-at>
+            <id type="integer">30</id>
+            <name>エコアクション２１</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime">2010-08-28 03:46:07</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-08-27 05:24:27</created-at>
+            <id type="integer">34</id>
+            <name>豊島産廃</name>
+            <parent-id type="integer">37</parent-id>
+            <updated-at type="datetime">2010-09-08 00:39:42</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-08-28 05:10:07</created-at>
+            <id type="integer">35</id>
+            <name>見学会</name>
+            <parent-id type="integer">36</parent-id>
+            <updated-at type="datetime">2010-09-08 00:41:15</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-09-08 00:38:54</created-at>
+            <id type="integer">36</id>
+            <name>見学・研修会</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2010-09-08 00:38:54</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">37</id>
+            <name>研修旅行</name>
+            <parent-id type="integer">36</parent-id>
+            <updated-at type="datetime"></updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">42</id>
+            <name>名古屋地区・愛知万博</name>
+            <parent-id type="integer">37</parent-id>
+            <updated-at type="datetime">2011-03-01 15:06:00</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">44</id>
+            <name>講演会（動画）：メンバー専用</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2010-09-09 10:04:13</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">43</id>
+            <name>化学部会</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime"></updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">46</id>
+            <name>シンポジウム</name>
+            <parent-id type="integer">17</parent-id>
+            <updated-at type="datetime"></updated-at>
+        </category>
+        <category>
+            <created-at type="datetime"></created-at>
+            <id type="integer">48</id>
+            <name>リンク</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime"></updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-09-19 18:06:48</created-at>
+            <id type="integer">49</id>
+            <name>講演会</name>
+            <parent-id type="integer">43</parent-id>
+            <updated-at type="datetime">2010-09-19 18:06:48</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-09-19 18:07:21</created-at>
+            <id type="integer">50</id>
+            <name>見学会</name>
+            <parent-id type="integer">43</parent-id>
+            <updated-at type="datetime">2010-09-19 18:07:21</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-10-21 08:16:22</created-at>
+            <id type="integer">51</id>
+            <name>業務研究会</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime">2010-12-10 05:30:35</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-10-25 19:35:24</created-at>
+            <id type="integer">52</id>
+            <name>セミナー</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2010-10-25 19:35:24</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-12-10 05:31:38</created-at>
+            <id type="integer">53</id>
+            <name>講演会</name>
+            <parent-id type="integer">51</parent-id>
+            <updated-at type="datetime">2010-12-10 05:31:38</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-12-10 05:45:53</created-at>
+            <id type="integer">54</id>
+            <name>見学会</name>
+            <parent-id type="integer">51</parent-id>
+            <updated-at type="datetime">2010-12-10 05:45:53</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2010-12-10 05:47:24</created-at>
+            <id type="integer">55</id>
+            <name>会員の広場</name>
+            <parent-id type="integer">51</parent-id>
+            <updated-at type="datetime">2010-12-10 05:47:24</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2011-02-28 20:16:33</created-at>
+            <id type="integer">56</id>
+            <name>会員の広場</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2011-02-28 20:16:33</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2011-02-28 20:17:20</created-at>
+            <id type="integer">57</id>
+            <name>会員の広場</name>
+            <parent-id type="integer">43</parent-id>
+            <updated-at type="datetime">2011-02-28 20:17:20</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2011-05-08 23:32:45</created-at>
+            <id type="integer">58</id>
+            <name>規程類</name>
+            <parent-id type="integer" ></parent-id>
+            <updated-at type="datetime">2011-05-08 23:32:45</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2012-03-27 09:42:13</created-at>
+            <id type="integer">59</id>
+            <name>東北地区</name>
+            <parent-id type="integer">37</parent-id>
+            <updated-at type="datetime">2012-03-27 09:42:13</updated-at>
+        </category>
+        <category>
+            <created-at type="datetime">2013-04-05 21:47:41</created-at>
+            <id type="integer">60</id>
+            <name>発電プロジェクト</name>
+            <parent-id type="integer">8</parent-id>
+            <updated-at type="datetime">2013-04-05 21:47:41</updated-at>
+        </category>
+    </categories>
+</hash>

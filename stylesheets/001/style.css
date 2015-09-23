@@ -1,0 +1,549 @@
+html,body,#container{
+	width : 100%;
+	height: 100%;
+	padding : 0px;
+	margin : 0px;
+	list-style : none;
+}
+
+
+#header{
+	width : 100%;
+	height : 80px;
+	background-image : url(logoback.png);
+	background-repeat : repeat-x;;
+	margin : 0px;
+	padding : 0px;
+}
+
+#header h1{
+	width : 100%;
+	height : 80px;
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	margin : 0px;
+	padding : 0px;
+	text-indent : -10000px;
+}
+
+
+h2.subject{
+	width : 800px;
+	height : 60px;
+	color : white;
+	background-image : url(h2frame.png);
+	font-size : 24px;
+	font-weight : 100;
+	font-family : "MS Sans Serif";
+	margin-left:-10px;
+}
+
+h2.subject span.title{
+	position : relative;
+	top : 10px;
+	left : 18px;
+}
+
+h2.subject span.subtitle{
+	display : block;
+	position : relative;
+	left : 22px;
+	bottom : -10px;
+	font-size : 14px;
+}
+
+#contents h2.subject span.subtitle a.subcategory{
+	color : yellow;
+}
+
+#contents a{
+	color : #0044ff;
+	text-decoration : none;
+}
+
+#contents{
+	width : 1024px;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : left;
+}
+
+#menu{
+	width : 200px;
+  /* $B:o=|8uJd(B
+	float : left;
+	position : relative;
+  */
+}
+
+/*google検索に伴って
+#menu a{
+	font-size : 12px;
+	color : white;	
+}*/
+
+#menu ul,#menu li{
+	padding : 0px;
+	margin : 0px;
+	margin-left : 12px;
+	list-style : none;
+}
+
+.menu_top{
+	font-size : 1px;
+	height : 12px;
+	width : 200px;
+	padding : 0px;
+	margin : 0px;
+	background-image : url(menu_top.png);
+	background-repeat : no-repeat;
+}
+
+.menu{
+	width : 200px;
+	padding : 0px;
+	margin : 0px;
+	background-image : url(menu_back.png);
+	background-repeat : repeat-y;
+	position : relative;
+}
+
+.menu h4{
+	margin : 0px;
+	padding: 0px;
+	color : gray;
+	font-weight : 100;
+	position : absolute;
+	text-decoration : underline;
+	top : 0px;
+	right : 14px;
+}
+
+.menu p{
+	margin : 0px;
+	padding: 0px;
+	padding-left : 1em;
+	color : white;
+	font-size : 12px;
+}
+
+#menu .menu form{
+	position : relative;
+	/*left : 8px; */
+	padding : 0px;
+	margin : 0px;
+}
+
+.menu form input.searchword{
+	width : 136px;
+}
+
+.menu form input.button{
+	width : 36px;
+}
+
+.menu_bottom{
+	font-size : 1px;
+	height : 10px;
+	width : 200px;
+	padding : 0px;
+	margin : 0px;
+	background-image : url(menu_bottom.png);
+	background-repeat : no-repeat;
+}
+
+.access_counter{
+	width : 200px;
+	padding : 0 0 0 10px;
+	margin : 0px;
+	background-image : url(menu_back.png);
+	background-repeat : repeat-y;
+	position : relative;
+	color:white;
+	font-size:12px;
+}
+
+#main{
+	width : 1024px;
+  /*$B!!:o=|8uJd(B
+	float:left;
+	position:relative;
+  */
+}
+
+#main .entry form, #main .entry form div {
+	display: inline;
+}
+
+#main h2{
+	font-size : 18px;
+}
+/* Articles::Line */
+
+div.articles{
+	color : black;
+	text-align : center;
+	width : 100%;
+}
+
+table.articles{
+	margin-left : auto;
+	margin-right: auto;
+	text-align : left;
+  width:760px;
+}
+table.articles.documents tr td.doc_title{
+	color : white;
+	background-color : #36f;
+}
+
+table.articles.documents{
+	margin-bottom : 10px;
+	border : 1px outset silver;
+}
+
+table.articles .author{
+  width:120px;
+}
+
+table.articles .date{
+  width:120px;
+}
+
+table.infos td{
+  padding: 10px;
+}
+
+table.infos .info_body{
+  width: 350px;
+}
+
+.line_0{
+	border-top : 1px solid silver;
+	border-bottom : 1px solid gray;
+	background-color : #eee;
+}
+/* welcome::index */
+
+div#index_containner{
+	width : 600px;
+	margin-left:10px;
+}
+
+#topsearchbox{
+	width : 600px;
+	height: 100px;
+	background-image : url(toplogo.png);
+	background-repeat: no-repeat;
+	margin-top : 5px;
+	margin-bottom : 5px;
+	padding-top : 5px;
+	padding-bottom : 8px;
+	font-size : 12px;
+	position : relative;
+}
+
+#topsearchbox form{
+	margin : 0px;
+	padding: 0px;
+}
+
+#topsearchbox div.sbox{
+	color : white;
+	text-align : left;
+	position : absolute;;
+	left : 15px;
+	bottom: 25px;
+}
+
+#topsearchbox input.searchword{
+	width : 300px;
+}
+
+#greeting {
+	width:645px;
+	font-size:14px;
+	border:1px solid silver;
+	padding:0px 10px 0px 10px;
+	line-height:1.5em;
+}
+
+fieldset.forenotice{
+  width:645px;
+  font-size:18px;
+  border:2px solid orangered;
+  padding:0px 10px 0px 10px;
+  line-height:1.5em;
+  background-color:white;
+}
+
+fieldset.last10article{
+	border : 1px solid silver;
+	font-size : 12px;
+	width : 645px;
+	margin : 0px;
+	padding-bottom : 15px;
+	white-space : nowrap;
+	display : block;
+	/*background-image : url(new_articles.png);*/
+	background-repeat : repeat-x;
+	background-position : bottom;
+}
+
+fieldset.sitemap{
+	border : 1px solid silver;
+	font-size : 12px;
+	width : 645px;
+	margin : 0px;
+	display : block;
+	text-align:center;
+	padding-bottom:5px;
+}
+
+.last10article a{
+	width : 280px;
+	overflow-x : hidden;
+	white-space : nowrap;
+	padding : 0px;
+	margin : 10px;
+	display : block;
+}
+
+.last10article li{
+	list-style : square;
+}
+
+#trackbacks{
+	width : 100%;
+}
+
+/* e::Welcome::index */
+/* Analyze::layout */
+div#center_column{
+	width : 580px;
+	float : left;
+	margin-left:10px;
+}
+
+#left_column{
+	width : 200px;
+	float : left;
+	margin-top:10px;
+	margin-left:80px;
+}
+
+ #left_column li
+,#left_column ul
+{
+	list-style-type: none;
+	margin : 0px;
+	margin-left : 5px;
+	padding: 0px;
+	text-indent : 5px;
+	border : none;
+	font-size : 14px;
+}
+
+#left_column li{
+	color : gray;
+}
+
+#left_column li a{
+	color : white;
+	font-size : 12px;
+}
+
+#calender{
+	color : white;
+	font-size : 12px;
+	text-align : center;
+}
+
+#calender a{
+	color : #5af;
+}
+
+#calender table{
+	margin-left : auto;
+	margin-right: auto;
+	margin-top : 15px;
+}
+
+#calender table tr td{
+	border-right : 1px solid #444;
+	border-bottom : 1px solid #444;
+}
+
+table.analyze_showcount{
+	font-size : 12px;
+	text-align : center;
+	margin-left : auto;
+	margin-right: auto;
+	width : 100%;
+}
+
+table.analyze_showcount td{
+	text-align : left;
+	border-bottom : 1px solid silver;
+}
+/* e::Analyze::layout */
+
+/* Article::NEW,EDIT */
+.definition100 dl,.definition100 dt,.definition100 dd{
+	margin : 0px;
+	padding : 0px;
+}
+
+.definition100 dd input#article_title,.definition100 dd input#document_name{
+	width : 100%;
+	margin : 0px;
+	border-bottom : 3px solid black;
+}
+
+/* rouute_map */
+#route_map{
+	font-size : 12px;
+}
+
+/* Categories bar */
+#categoires a{
+	color : black;
+	font-size : 12px;
+	text-decoration : none;	
+	border-left : 1px solid silver;
+	border-right : 1px solid silver;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+#category_main{
+  padding-bottom : 50px;
+	padding:0px;
+	height : 24px;
+	background-image : url(category_menu_center.png);
+}
+
+#categoires a:hover{
+	background-color : #ddd;
+}
+
+#categoires{
+	width : 100%;
+	text-align : center;
+	/*background-image : url(category_menu_center.png);改行時のデザインの崩れを改善するために#category_mainに移動　2011/-5/16*/
+}
+
+ #categories_menu li
+,#categories_menu ul
+{
+	list-style-type: none;/*square;*/
+	margin : 0px;
+	margin-left : 5px;
+	padding: 0px;
+	text-indent : 5px;
+	border : none;
+	font-size : 14px;
+}
+
+#categories_menu li{
+	border-left : 1px solid gray;
+	color : gray;
+}
+
+#categories_menu li a
+,#general_menu li a{
+	color : white;
+	font-size : 12px;
+}
+
+#categories_menu
+,#general_menu{
+/*	width : 200px;
+	float : left;
+	position:relative;*/
+}
+
+#left_menu{
+	float:left;
+	margin-top:17px;
+	/* margin-left:10px;*/
+}
+
+#left_menu_top{
+	float:left;
+	margin-top:5px;
+	margin-left:80px;
+}
+
+div#body{
+	position : relative;
+}
+
+div#trackback{
+	padding : 1em;
+	margin : 1em;
+	border : 1px solid silver;
+}
+
+/* articles::show */
+
+#author_profile{
+	display : none;
+}
+
+/* common */
+a:hover{
+	text-decoration : underline !important;
+}
+
+/*  */
+#footer{
+	clear : both;
+	margin-top : 20px;
+	border-top : 1px solid black;
+	font-size : 12px;
+	text-align : center;
+	color : white;
+	background-color : black;
+	height : 300px;
+}
+
+/* Analyze::Keywords */
+table.keywords{
+	width : 100%;
+	font-size : 12px;
+}
+
+table.keywords tr td.num{
+	width : 50px;
+	text-align : right;
+}
+
+table.keywords tr td.word{
+	
+}
+
+table.articles.documents tr td.ready{
+	color : red;
+}
+
+.searchedword{
+	color : black;
+	background-color : yellow;
+	font-weight : 900;
+}
+
+a.keywordlink{
+	color : black !important;
+}
+
+dt{
+	font-weight : 900;
+}
+
+p.optional{
+    font-size:small;
+}
+

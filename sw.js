@@ -8,25 +8,11 @@ importScripts('serviceworker-cache-polyfill.js');
  * オフライン時、キャッシュに登録されていないURLにアクセスした場合に表示するHTMLを取得する。
  * オンライン時にこのファイルにアクセスすることがないため。
 */
- /*
-addEventListener("install", function(event)
-{
-  event.waitUntil(
-    caches.open("myCache")
-      .then(function(cache)
-      {
-        console.log("cache add all complete");
-        return cache.addAll(["/index.html"]);
-      })
-  );
-});
-*/
+
 //公式からのソース
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'pe-eco-only-article';
 var urlsToCache = [
-  'index.html',
-  'back.jpg',
-  'image_src.png'
+  '/'
 ];
 
 self.addEventListener('install', function(event) {
