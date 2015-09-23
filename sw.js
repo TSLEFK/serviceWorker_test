@@ -12,7 +12,10 @@ importScripts('serviceworker-cache-polyfill.js');
 //公式からのソース
 var CACHE_NAME = 'pe-eco-only-article';
 var urlsToCache = [
-  '/'
+  '/',
+  'back.jpg',
+  'articles/show/387',
+  'articles/show/388'
 ];
 
 self.addEventListener('install', function(event) {
